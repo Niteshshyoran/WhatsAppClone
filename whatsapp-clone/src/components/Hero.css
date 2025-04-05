@@ -1,0 +1,209 @@
+/* Global Fix */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+    background-image: url("/bg-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5%;
+    overflow: hidden;
+}
+
+/* Text Content */
+.hero-content {
+    max-width: 500px;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 4vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+.hero-content p {
+    font-size: 1.2vw;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.download-btn,
+.login-btn {
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1.2vw;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.download-btn {
+    background-color: #25d366;
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #1ebd5a;
+}
+
+.login-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+}
+
+.login-btn:hover {
+    background-color: #f4f4f4;
+}
+
+/* Chat overlays */
+.chat-overlay {
+    position: absolute;
+    max-width: 15vw;
+    z-index: 1;
+}
+
+.chat1 {
+    top: 10%;
+    right: 18%;
+    width: 12vw;
+}
+
+.chat2 {
+    top: 35%;
+    right: 12%;
+    width: 14vw;
+}
+
+.chat3 {
+    bottom: 30%;
+    right: 14%;
+    width: 10vw;
+}
+
+.chat4 {
+    bottom: 10%;
+    right: 16%;
+    width: 18vw;
+}
+
+.chat-overlay img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Attribution Text */
+.disclaimer {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 1vw;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 1024px) {
+    .hero-content {
+        max-width: 400px;
+    }
+
+    .hero-content h1 {
+        font-size: 5vw;
+    }
+
+    .hero-content p {
+        font-size: 1.5vw;
+    }
+
+    .download-btn,
+    .login-btn {
+        font-size: 1.5vw;
+    }
+
+    .chat-overlay {
+        max-width: 18vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 8% 4%;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 6vw;
+    }
+
+    .hero-content p {
+        font-size: 2vw;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .download-btn,
+    .login-btn {
+        font-size: 3vw;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .chat-overlay {
+        display: none;
+    }
+
+    .disclaimer {
+        font-size: 2.5vw;
+        right: 10px;
+        bottom: 10px;
+    }
+}

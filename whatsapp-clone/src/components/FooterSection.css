@@ -1,0 +1,96 @@
+.footer {
+    background-color: #111c1f;
+    color: white;
+    padding: 3rem 2rem;
+    font-family: sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .download-btn {
+    background-color: #25d366;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+  }
+  
+  .footer-links h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.6rem;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .footer-links li:hover {
+    color: #25d366;
+  }
+  
+  hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links-bottom a {
+    margin-right: 1rem;
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-links-bottom a:hover {
+    color: white;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .language-select {
+    border: 1px solid white;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+  }
+  

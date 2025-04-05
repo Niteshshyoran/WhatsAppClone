@@ -1,0 +1,120 @@
+/* Header.css */
+
+.whatsapp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap; /* ✅ Allow wrapping on smaller screens */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  /* Logo section */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo-img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #25d366;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-links li:hover {
+    color: #25d366;
+    transform: translateY(-1px); /* ✅ Slight hover motion */
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .login-btn,
+  .download-btn {
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    background-color: transparent;
+    color: #25d366;
+    border: 1px solid #25d366;
+  }
+  
+  .login-btn:hover {
+    background-color: #e8f5e9;
+  }
+  
+  /* Download Button */
+  .download-btn {
+    background-color: #25d366;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+  }
+  
+  .download-btn:hover {
+    background-color: #1ebd5b;
+  }
+  
+  /* 🔄 Responsive Media Queries */
+  @media (max-width: 768px) {
+    .whatsapp-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .buttons {
+      align-self: flex-start;
+    }
+  }
+  

@@ -1,0 +1,146 @@
+.updates-wrapper {
+    display: flex;
+    padding: 3rem 2rem;
+    background-color: #eaffea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 2rem;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .updates-text {
+    flex: 1;
+    max-width: 30%;
+  }
+  
+  .updates-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .updates-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 100%;
+  }
+  
+  .slider-section {
+    flex: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .updates-cards {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
+    scrollbar-width: none;
+  }
+  
+  .updates-cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .update-card {
+    background: white;
+    border-radius: 1.25rem;
+    padding: 2rem 1.5rem;
+    width: 300px;
+    min-height: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .update-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .whatsapp-icon {
+    width: 12px;
+    height: 12px;
+    background-color: #25d366;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1c1c1e;
+  }
+  
+  .card-description {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .read-more {
+    align-self: flex-start;
+    padding: 0.5rem 1.2rem;
+    border-radius: 9999px;
+    border: 1px solid #000;
+    background: transparent;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .read-more:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    border: none;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    z-index: 3;
+  }
+  
+  .scroll-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-50%) scale(1.05);
+  }
+  
+  .scroll-btn.left {
+    left: -50px; /* pushes button fully outside the content area */
+  }
+  
+  .scroll-btn.right {
+    right: -50px;
+  }
+  
+@media (max-width: 500px) {
+    .updates-wrapper {
+      padding: 2rem 1rem;
+    }
+  
+    .scroll-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 1.5rem;
+    }
+  }
